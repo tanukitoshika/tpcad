@@ -1,0 +1,8 @@
+[33m[ WARN] [1531906085.831748054]: [image_transport] Topics '/camera/plane_detection' and '/camera/camera_info' do not appear to be synchronized. In the last 10s:
+	Image messages received:      50
+	CameraInfo messages received: 0
+	Synchronized pairs:           0[0m
+[33m[ WARN] [1531906095.832060510]: [image_transport] Topics '/camera/plane_detection' and '/camera/camera_info' do not appear to be synchronized. In the last 10s:
+	Image messages received:      50
+	CameraInfo messages received: 0
+	Synchronized pairs:           0[0m

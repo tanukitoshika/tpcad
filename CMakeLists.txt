@@ -201,3 +201,6 @@ include_directories(
 
 add_executable(tpcdi src/tpcdi.cpp)
 target_link_libraries(tpcdi ${catkin_LIBRARIES})
+
+add_executable(p_tpcdi src/3tpcdi.cpp)
+target_link_libraries(p_tpcdi ${catkin_LIBRARIES})

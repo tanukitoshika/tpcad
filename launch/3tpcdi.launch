@@ -1,0 +1,17 @@
+<launch>
+  <arg name="date" default="0000"/>
+  <group ns="image_saver1">
+    <node name="image_view" pkg="image_view" type="image_view" args="image:=/camera/color/image_rect_color"/>
+    <node name="image_saver" pkg="image_view" type="image_saver" args="image:=/camera/color/image_rect_color _save_all_image:=false _encoding:=8UC3 _filename_format:=color$(arg date)%04i.png"/>
+  </group>
+
+  <group ns="image_saver2">
+    <node name="image_view" pkg="image_view" type="image_view" args="image:=/camera/aligned_depth_to_color/image_raw"/>
+    <node name="image_saver" pkg="image_view" type="image_saver" args="image:=/camera/aligned_depth_to_color/image_raw _save_all_image:=false _encoding:=16UC1 _filename_format:=depth$(arg date)%04i.png"/>
+  </group>
+
+  <group ns="image_saver3">
+    <node name="image_view" pkg="image_view" type="image_view" args="image:=/camera/plane_detection/image"/>
+    <node name="image_saver" pkg="image_view" type="image_saver" args="image:=/camera/plane_detection/image _save_all_image:=false _encoding:=8UC3 _filename_format:=plane$(arg date)%04i.png"/>
+  </group>
+</launch>

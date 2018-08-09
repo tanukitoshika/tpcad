@@ -6,7 +6,7 @@ In terminal,
 In new terminal, move to the repository where you want to save pictures.
 After that,  
 ``$ ROS_HOME=`pwd` roslaunch tpcdi tpcdi.launch``  
-OR
+OR  
 ``$ ROS_HOME=`pwd` roslaunch tpcdi tpcdi.launch date:=$(date +"%Y-%m-%d-%I-%M")``  
 After set the pose of your camera,  
 `$ rosrun tpcdi tpcdi`  
